@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: #181818;
+}
+
+body {
+    padding-top: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+}
+
+footer {
+    color: darkgrey;
+    font-size: 14px;
+    text-align: center;
+    bottom: 0;
+} 
+
+h4 {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #32a852;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #32a852;
+}
+
+.toolbar {
+    margin: auto;
+    width: 700px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.profile-container {
+    border-radius: 20px;
+    width: 750px;
+    height: 300px;
+    margin: auto;
+    background-color: #262626;
+    padding: 80px;
+}
+
+.profile-content {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.profile-image {
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.profile-info {
+    height: 110px;
+    width: 500px;
+    text-align: left;
+    padding-top: 40px;
+    display: inline-block;
+}
+
+.edit {
+    height: 95px;
+    padding-top: 55px;
+    text-align: center;
+    float: right;
+}
+
+.profile-data {
+    border-radius: 10px;
+    max-height: 150px;
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.profile-data:hover {
+    opacity: 0.5;
+}
+
+.projects {
+    background-color: #32a852;
+    float: left;
+}
+
+.stars {
+    background-color: #2082c9;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.followers {
+    background-color: #c99c28;
+    float: right;
+}
+
+.profile-image img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
