@@ -10,5 +10,5 @@ This is a simple project developed in HTML and CSS inspired by one of the many e
 I decided to go one step forward and integrate this front-end to the GitHub API, so I can get the informations about any user I want, so here's the ToDo list for my future self:
 
 - [X] Web version
-- [ ] Responsive version
+- [X] Responsive version
 - [ ] GitHub API integration
