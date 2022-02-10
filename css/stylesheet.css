@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 * {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-html {
-    background-color: #181818;
-}
-
 body {
-    padding-top: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
 }
 
 a {
@@ -51,52 +50,45 @@ button {
 
 button:hover {
     background-color: #fff;
-    color: #32a852;
-}
-
-.toolbar {
-    margin: auto;
-    width: 700px;
-    text-align: right;
-    margin-bottom: 10px;
+    color: #181818;
 }
 
 .profile-container {
+    width: 700px;
     border-radius: 20px;
-    width: 750px;
-    height: 300px;
-    margin: auto;
     background-color: #262626;
     padding: 80px;
+    margin: auto;
 }
 
-.profile-content {
-    width: 100%;
-    height: 50%;
-    color: #fff;
-    text-align: center;
-    padding: 0;
-}
-
-.profile-image {
-    height: 100%;
-    text-align: center;
-    float: left;
+.profile-info-img-name {
+    display: flex;
+    align-items: center;
 }
 
 .profile-info {
-    height: 110px;
-    width: 500px;
-    text-align: left;
-    padding-top: 40px;
-    display: inline-block;
+    margin-left: 25px;
 }
 
-.edit {
-    height: 95px;
-    padding-top: 55px;
-    text-align: center;
-    float: right;
+.profile-content-info {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-content-stats {
+    margin-top: 50px;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
 }
 
 .profile-data {
@@ -125,7 +117,7 @@ button:hover {
 }
 
 .followers {
-    background-color: #c99c28;
+    background-color: #f0bb36;
     float: right;
 }
 
@@ -133,4 +125,47 @@ button:hover {
     width: 125px;
     height: 125px;
     border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+    .profile-container {
+        width: 600px;
+    }
+    .profile-content-stats {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .profile-data {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 905px) {
+    .profile-image img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .profile-content-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 775px) {
+    .profile-container {
+        width: 400px;
+    }
 }
