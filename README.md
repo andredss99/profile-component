@@ -11,4 +11,4 @@ I decided to go one step forward and integrate this front-end to the GitHub API,
 
 - [X] Web version
 - [X] Responsive version
-- [ ] GitHub API integration
+- [X] GitHub API integration
