@@ -9,12 +9,6 @@ const requestProfileInfo = fetch(baseUrl)
     document.querySelector('.profile-info h4').innerHTML = jsonBody.login;
     document.querySelector('.repositories h1').innerHTML = jsonBody.public_repos;
     document.querySelector('.followers h1').innerHTML = jsonBody.followers;
-
-    const stats = document.querySelectorAll('.profile-content-stats a');
-    stats.forEach(profileLink => {
-        const tabName = profileLink.children[0].className.split(' ')[1];
-        profileLink.href = jsonBody.html_url + '?tab=' + tabName;
-    });
 });
 
 const requestStarsInfo = fetch(starsUrl)
